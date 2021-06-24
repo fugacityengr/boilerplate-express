@@ -10,7 +10,7 @@ var app = express();
 
 const getHandler = (req, res) => {
   const file = __dirname + "/views/index.html";
-  res.send(file);
+  res.sendFile(file);
 };
 app.get("/", getHandler);
 
