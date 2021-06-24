@@ -9,7 +9,7 @@ var app = express();
 // app.get("/", getHandler);
 
 const getHandler = (req, res) => {
-  const file = __dirname + /views/index.html;
+  const file = __dirname + "/views/index.html";
   res.send(file);
 };
 app.get("/", getHandler);
