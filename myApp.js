@@ -14,4 +14,7 @@ const getHandler = (req, res) => {
 };
 app.get("/", getHandler);
 
+const assets = __dirname + "/public";
+app.use(express.static(assets));
+
 module.exports = app;
